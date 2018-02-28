@@ -44,6 +44,8 @@ object RockPaperScissorSpocLizard extends App {
   //Starting point of the program
   println("Enter the number of games you wish to play")
   val numberOfGames = scala.io.StdIn.readInt()
+  
+  //As per the given problem, it is assumed that Player1 will always select Lizard and Player2 will select randomly.
   val res = result(Lizard, numberOfGames)
 
   println(s"Player A wins ${res.player1Wins} of ${numberOfGames} games")
